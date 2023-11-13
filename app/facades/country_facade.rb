@@ -22,10 +22,14 @@ class CountryFacade
     def capital_coords_for_country(country_name)
         country_service = CountryService.new
         country_info = country_service.capital_coords(country_name)
-    
+      
         return nil unless country_info
-    
-        country_info.map(&:to_f)
+      
+        capital_info = country_info[0]["capitalInfo"]
+        
+        return nil unless capital_info && capital_info["latlng"]
+      
+        capital_info["latlng"].map(&:to_f)
     end
 
 end

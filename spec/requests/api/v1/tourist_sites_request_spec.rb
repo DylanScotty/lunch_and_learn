@@ -13,8 +13,8 @@ RSpec.describe 'TouristSites API', type: :request do
 
         json_response = JSON.parse(response.body)
         expect(json_response).to have_key('data')
-        expect(json_response['data']).to be_an(Array)
-
+        expect(json_response['data']).to be_an(Hash)
+        require 'pry'; binding.pry
         expect(json_response['data'][0]).to have_key('id')
         expect(json_response['data'][0]).to have_key('type')
         expect(json_response['data'][0]['type']).to eq('tourist_site')

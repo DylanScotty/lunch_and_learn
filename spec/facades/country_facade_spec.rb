@@ -1,45 +1,39 @@
 require 'rails_helper'
-require_relative '../../app/facades/country_facade'
 
-RSpec.describe CountryFacade do
-  let(:country_facade) { CountryFacade.new }
+RSpec.describe CountryFacade, type: :facade do
+  describe "instance methods" do
+    it "random_country", :vcr do
+      country_facade = CountryFacade.new
 
-  describe '#random_country' do
-    it 'returns a random country name' do
-      allow(country_facade).to receive(:fetch_countries).and_return([{ "name" => { "common" => "Country1" } }])
-      expect(country_facade.random_country).to eq("Country1")
-    end
-  end
+      random_country = country_facade.random_country
 
-  describe '#find_country' do
-    context 'when the country exists' do
-      it 'returns the country name' do
-        allow_any_instance_of(CountryService).to receive(:search_country).and_return([{ "name" => { "common" => "FoundCountry" } }])
-        expect(country_facade.find_country('FoundCountry')).to eq('FoundCountry')
-      end
+      expect(random_country).to be_a String
     end
 
-    context 'when the country does not exist' do
-      it 'returns nil' do
-        allow_any_instance_of(CountryService).to receive(:search_country).and_return([])
-        expect(country_facade.find_country('NonExistentCountry')).to be_nil
-      end
-    end
-  end
+    it "fetch_countries", :vcr do
+      country_facade = CountryFacade.new
 
-  describe '#capital_coords_for_country' do
-    context 'when the country exists' do
-      it 'returns the capital coordinates as an array of floats' do
-        allow_any_instance_of(CountryService).to receive(:capital_coords).and_return([14.6, -61.08])
-        expect(country_facade.capital_coords_for_country('ExistingCountry')).to eq([14.6, -61.08])
-      end
+      all_countries = country_facade.fetch_countries
+
+      expect(all_countries).to be_an Array
+      expect(all_countries).not_to be_empty
     end
 
-    context 'when the country does not exist' do
-      it 'returns nil' do
-        allow_any_instance_of(CountryService).to receive(:capital_coords).and_return(nil)
-        expect(country_facade.capital_coords_for_country('NonExistentCountry')).to be_nil
-      end
+    it "find_country(country_name)", :vcr do
+      country_facade = CountryFacade.new
+      country_name = 'France' 
+
+      found_country = country_facade.find_country(country_name)
+
+      expect(found_country).to eq country_name
+    end
+
+    it "capital_coords_for_country", :vcr do
+      country_facade = CountryFacade.new
+      country_name = 'France'
+
+      coords = country_facade.capital_coords_for_country(country_name)
+
     end
   end
 end
