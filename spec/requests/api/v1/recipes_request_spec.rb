@@ -8,6 +8,7 @@ RSpec.describe "Recipes by Country" do
     expect(response).to be_successful
 
     json_response = JSON.parse(response.body)
+
     expect(json_response['data']).to be_an(Array)
 
     expect(json_response['data'][0]["id"]).to eq nil

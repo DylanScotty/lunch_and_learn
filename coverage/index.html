@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-13T11:38:14-07:00">2023-11-13T11:38:14-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-13T11:52:56-07:00">2023-11-13T11:52:56-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  94.07%
+  95.95%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.64
+         1.67
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>253</b> relevant lines,
-    <span class="green"><b>238</b> lines covered</span> and
-    <span class="red"><b>15</b> lines missed. </span>
+    <b>247</b> relevant lines,
+    <span class="green"><b>237</b> lines covered</span> and
+    <span class="red"><b>10</b> lines missed. </span>
     (<span class="green">
-  94.07%
+  95.95%
 </span>
 )
   </div>
@@ -348,7 +348,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#2e672734af47a82cdc9096e4147d0791cd2ecdfc" class="src_link" title="spec/requests/api/v1/recipes_request_spec.rb">spec/requests/api/v1/recipes_request_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">32</td>
+            <td class="cell--number">33</td>
             <td class="cell--number">21</td>
             <td class="cell--number">21</td>
             <td class="cell--number">0</td>
@@ -358,12 +358,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#97c2ff604070fbe2a781133fa43a4c3a20c02816" class="src_link" title="spec/requests/api/v1/tourist_sites_request_spec.rb">spec/requests/api/v1/tourist_sites_request_spec.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">35.00 %</td>
-            <td class="cell--number">28</td>
-            <td class="cell--number">20</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">13</td>
-            <td class="cell--number">0.35</td>
+            <td class="red strong cell--number t-file__coverage">42.86 %</td>
+            <td class="cell--number">22</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">0.43</td>
             
           </tr>
         
@@ -1917,7 +1917,7 @@
 
             
 
-            <code class="ruby">    set_id :place_id</code>
+            <code class="ruby">    set_id :id </code>
           </li>
         </div>
       
@@ -6587,18 +6587,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(json_response[&#39;data&#39;]).to be_an(Array)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -6609,13 +6598,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
+          <li class="covered" data-hits="1" data-linenumber="12">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(json_response[&#39;data&#39;][0][&quot;id&quot;]).to eq nil</code>
+            <code class="ruby">    expect(json_response[&#39;data&#39;]).to be_an(Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -6626,7 +6626,7 @@
 
             
 
-            <code class="ruby">    expect(json_response[&#39;data&#39;][0][&quot;type&quot;]).to eq &quot;recipes&quot;</code>
+            <code class="ruby">    expect(json_response[&#39;data&#39;][0][&quot;id&quot;]).to eq nil</code>
           </li>
         </div>
       
@@ -6637,7 +6637,7 @@
 
             
 
-            <code class="ruby">    expect(json_response[&#39;data&#39;][0][&quot;attributes&quot;][&quot;title&quot;]).to eq &quot;Chocolate Cake with Cashew Cream and Figs&quot;</code>
+            <code class="ruby">    expect(json_response[&#39;data&#39;][0][&quot;type&quot;]).to eq &quot;recipes&quot;</code>
           </li>
         </div>
       
@@ -6648,7 +6648,7 @@
 
             
 
-            <code class="ruby">    expect(json_response[&#39;data&#39;][0][&quot;attributes&quot;][&quot;url&quot;]).to eq &quot;http://www.edamam.com/ontologies/edamam.owl#recipe_df04703e1a71bf4f1233658edaba5d1f&quot;</code>
+            <code class="ruby">    expect(json_response[&#39;data&#39;][0][&quot;attributes&quot;][&quot;title&quot;]).to eq &quot;Chocolate Cake with Cashew Cream and Figs&quot;</code>
           </li>
         </div>
       
@@ -6659,7 +6659,7 @@
 
             
 
-            <code class="ruby">    expect(json_response[&#39;data&#39;][0][&quot;attributes&quot;][&quot;country&quot;]).to eq &quot;Guatemala&quot;</code>
+            <code class="ruby">    expect(json_response[&#39;data&#39;][0][&quot;attributes&quot;][&quot;url&quot;]).to eq &quot;http://www.edamam.com/ontologies/edamam.owl#recipe_df04703e1a71bf4f1233658edaba5d1f&quot;</code>
           </li>
         </div>
       
@@ -6670,18 +6670,18 @@
 
             
 
-            <code class="ruby">    expect(json_response[&#39;data&#39;][0][&quot;attributes&quot;][&quot;image&quot;]).to be_a String</code>
+            <code class="ruby">    expect(json_response[&#39;data&#39;][0][&quot;attributes&quot;][&quot;country&quot;]).to eq &quot;Guatemala&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="19">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">    expect(json_response[&#39;data&#39;][0][&quot;attributes&quot;][&quot;image&quot;]).to be_a String</code>
           </li>
         </div>
       
@@ -6692,18 +6692,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="21">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="21">
+            
             
 
             
 
-            <code class="ruby">  it &quot;sad path of retrieving recipes&quot;, :vcr do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -6714,7 +6714,7 @@
 
             
 
-            <code class="ruby">    params = { country: &quot;asdfjkl;&quot; }</code>
+            <code class="ruby">  it &quot;sad path of retrieving recipes&quot;, :vcr do</code>
           </li>
         </div>
       
@@ -6725,12 +6725,23 @@
 
             
 
+            <code class="ruby">    params = { country: &quot;asdfjkl;&quot; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    get &quot;/api/v1/recipes&quot;, params: params</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="24">
+          <li class="never" data-hits="" data-linenumber="25">
             
             
 
@@ -6741,7 +6752,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="25">
+          <li class="covered" data-hits="1" data-linenumber="26">
             <span class="hits">1</span>
             
 
@@ -6752,7 +6763,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="27">
             
             
 
@@ -6763,7 +6774,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="27">
+          <li class="covered" data-hits="1" data-linenumber="28">
             <span class="hits">1</span>
             
 
@@ -6774,7 +6785,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="28">
+          <li class="never" data-hits="" data-linenumber="29">
             
             
 
@@ -6785,7 +6796,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="29">
+          <li class="covered" data-hits="1" data-linenumber="30">
             <span class="hits">1</span>
             
 
@@ -6796,7 +6807,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="30">
+          <li class="covered" data-hits="1" data-linenumber="31">
             <span class="hits">1</span>
             
 
@@ -6807,7 +6818,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
+          <li class="never" data-hits="" data-linenumber="32">
             
             
 
@@ -6818,7 +6829,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="32">
+          <li class="never" data-hits="" data-linenumber="33">
             
             
 
@@ -6838,7 +6849,7 @@
     <h3>spec/requests/api/v1/tourist_sites_request_spec.rb</h3>
     <h4>
       <span class="red">
-  35.0%
+  42.86%
 </span>
 
       lines covered
@@ -6847,9 +6858,9 @@
     
 
     <div class="t-line-summary">
-      <b>20</b> relevant lines.
-      <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>13</b> lines missed.</span>
+      <b>14</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>8</b> lines missed.</span>
     </div>
 
     
@@ -6921,7 +6932,7 @@
 
             
 
-            <code class="ruby">      it &#39;returns a collection of tourist sites&#39; do</code>
+            <code class="ruby">        it &quot;can retrieve all recipes from a certain country&quot;, :vcr do</code>
           </li>
         </div>
       
@@ -6932,29 +6943,29 @@
 
             
 
-            <code class="ruby">        VCR.use_cassette(&#39;tourist_sites/happy_path&#39;, record: :once) do</code>
+            <code class="ruby">            get &#39;/api/v1/tourist_sites&#39;, params: { country: &#39;France&#39; }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="8">
+            
             
 
             
 
-            <code class="ruby">          get &#39;/api/v1/tourist_sites&#39;, params: { country: &#39;France&#39; }</code>
+            <code class="ruby">        </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="missed" data-hits="0" data-linenumber="9">
             
             
 
             
 
-            <code class="ruby">        end</code>
+            <code class="ruby">            expect(response).to be_successful</code>
           </li>
         </div>
       
@@ -6965,7 +6976,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        </code>
           </li>
         </div>
       
@@ -6976,7 +6987,7 @@
 
             
 
-            <code class="ruby">        expect(response).to have_http_status(:success)</code>
+            <code class="ruby">            json_response = JSON.parse(response.body)</code>
           </li>
         </div>
       
@@ -6987,7 +6998,7 @@
 
             
 
-            <code class="ruby">        expect(response.content_type).to eq(&#39;application/json; charset=utf-8&#39;)</code>
+            <code class="ruby">            expect(json_response[&#39;data&#39;]).to be_an(Array)</code>
           </li>
         </div>
       
@@ -6998,7 +7009,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        </code>
           </li>
         </div>
       
@@ -7009,7 +7020,7 @@
 
             
 
-            <code class="ruby">        json_response = JSON.parse(response.body)</code>
+            <code class="ruby">            expect(json_response[&#39;data&#39;][0][&quot;id&quot;]).to eq nil</code>
           </li>
         </div>
       
@@ -7020,7 +7031,7 @@
 
             
 
-            <code class="ruby">        expect(json_response).to have_key(&#39;data&#39;)</code>
+            <code class="ruby">            expect(json_response[&#39;data&#39;][0][&quot;type&quot;]).to eq &quot;tourist_site&quot;</code>
           </li>
         </div>
       
@@ -7031,7 +7042,7 @@
 
             
 
-            <code class="ruby">        expect(json_response[&#39;data&#39;]).to be_an(Hash)</code>
+            <code class="ruby">            expect(json_response[&#39;data&#39;][0][&quot;attributes&quot;][&quot;name&quot;]).to eq &quot;Fort-de-France&quot;</code>
           </li>
         </div>
       
@@ -7042,7 +7053,7 @@
 
             
 
-            <code class="ruby">        require &#39;pry&#39;; binding.pry</code>
+            <code class="ruby">            expect(json_response[&#39;data&#39;][0][&quot;attributes&quot;][&quot;address&quot;]).to eq &quot;Le Chapître, Rue du Chapitre, 23200 Aubusson, France&quot;</code>
           </li>
         </div>
       
@@ -7053,89 +7064,23 @@
 
             
 
-            <code class="ruby">        expect(json_response[&#39;data&#39;][0]).to have_key(&#39;id&#39;)</code>
+            <code class="ruby">            expect(json_response[&#39;data&#39;][0][&quot;attributes&quot;][&quot;place_id&quot;]).to be_a String</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="19">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
             
 
-            <code class="ruby">        expect(json_response[&#39;data&#39;][0]).to have_key(&#39;type&#39;)</code>
+            <code class="ruby">        end</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="20">
-            
-            
-
-            
-
-            <code class="ruby">        expect(json_response[&#39;data&#39;][0][&#39;type&#39;]).to eq(&#39;tourist_site&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="21">
-            
-            
-
-            
-
-            <code class="ruby">        expect(json_response[&#39;data&#39;][0]).to have_key(&#39;attributes&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="22">
-            
-            
-
-            
-
-            <code class="ruby">        expect(json_response[&#39;data&#39;][0][&#39;attributes&#39;]).to have_key(&#39;name&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="23">
-            
-            
-
-            
-
-            <code class="ruby">        expect(json_response[&#39;data&#39;][0][&#39;attributes&#39;]).to have_key(&#39;address&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="24">
-            
-            
-
-            
-
-            <code class="ruby">        expect(json_response[&#39;data&#39;][0][&#39;attributes&#39;]).to have_key(&#39;place_id&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="25">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="20">
             
             
 
@@ -7146,7 +7091,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="21">
             
             
 
@@ -7157,7 +7102,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="28">
+          <li class="never" data-hits="" data-linenumber="22">
             
             
 
