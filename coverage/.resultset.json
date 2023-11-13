@@ -187,6 +187,7 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null
@@ -207,9 +208,19 @@
           null,
           null,
           1,
+          4,
+          4,
+          null,
+          null,
+          2,
+          null,
+          null,
+          null,
+          1,
           3,
           3,
           null,
+          3,
           null,
           2,
           null,
@@ -268,18 +279,71 @@
         "lines": [
           1,
           1,
-          2,
+          3,
           null,
-          2,
+          3,
           19,
           null,
           null,
           null
         ]
       },
-      "/Users/dylantimmons/Mod3/lunch_and_learn/spec/poros/recipe_poro_spec.rb": {
+      "/Users/dylantimmons/Mod3/lunch_and_learn/spec/facades/town_sites_facade_spec.rb": {
         "lines": [
           1,
+          1,
+          null,
+          1,
+          3,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/dylantimmons/Mod3/lunch_and_learn/app/facades/tourist_sites_facade.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          3,
+          null,
+          2,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/dylantimmons/Mod3/lunch_and_learn/spec/poros/recipe_poro_spec.rb": {
+        "lines": [
           1,
           null,
           1,
@@ -336,6 +400,44 @@
           null
         ]
       },
+      "/Users/dylantimmons/Mod3/lunch_and_learn/spec/poros/tourist_site_poro_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/dylantimmons/Mod3/lunch_and_learn/app/poros/tourist_site_poro.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/dylantimmons/Mod3/lunch_and_learn/spec/requests/api/v1/recipes_request_spec.rb": {
         "lines": [
           1,
@@ -357,19 +459,50 @@
           1,
           1,
           1,
-          1,
           null,
           null,
           1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/dylantimmons/Mod3/lunch_and_learn/spec/requests/api/v1/tourist_sites_request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           0,
           0,
           null,
           0,
+          0,
+          0,
           null,
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
-          0,
-          0,
+          null,
           null,
           null
         ]
@@ -378,16 +511,20 @@
         "lines": [
           1,
           1,
-          1,
+          3,
           null,
           null,
           1,
-          1,
-          1,
+          3,
+          3,
           null,
           null,
           1,
           0,
+          null,
+          null,
+          1,
+          2,
           null,
           null,
           1,
@@ -401,7 +538,7 @@
           1,
           null,
           1,
-          1,
+          2,
           null,
           null,
           null,
@@ -412,12 +549,39 @@
           null,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/dylantimmons/Mod3/lunch_and_learn/app/services/places_service.rb": {
+        "lines": [
           1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
           null,
           null
         ]
@@ -426,15 +590,15 @@
         "lines": [
           1,
           1,
-          1,
+          2,
           0,
           0,
           null,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
-          1,
+          2,
           null,
           null
         ]
@@ -456,8 +620,21 @@
           1,
           null
         ]
+      },
+      "/Users/dylantimmons/Mod3/lunch_and_learn/app/controllers/api/v1/tourist_sites_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1699818720
+    "timestamp": 1699897509
   }
 }

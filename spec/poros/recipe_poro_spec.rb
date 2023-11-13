@@ -1,5 +1,4 @@
 require 'rails_helper'
-require_relative '../../app/poros/recipe_poro'
 
 RSpec.describe RecipePoro do
   describe "#initialize" do

@@ -15,4 +15,8 @@ class CountryService
     def search_country(country_name)
       get_url("/v3.1/name/#{country_name}")
     end
+
+    def capital_coords(country_name)
+      get_url("/v3.1/capital/#{country_name}")
+    end
 end
