@@ -27,3 +27,14 @@ RSpec.describe CountryFacade do
     end
   end
 end
+
+describe "find_cords_country(country_name)", :vcr do
+    it "Happy Path" do
+      country_facade = CountryFacade.new
+      country_name = 'France'
+
+      cords = country_facade.find_cords_country(country_name)
+
+      expect(cords).to be_a Array
+    end
+end
