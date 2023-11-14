@@ -21,13 +21,13 @@ RSpec.describe RecipeFacade do
       expect(recipes).to be_an(Array)
       expect(recipes.length).to eq(2)
 
-      expect(recipes[0]).to be_a(RecipePoro)
+      expect(recipes[0]).to be_a(Recipe)
       expect(recipes[0].title).to eq("Recipe1")
       expect(recipes[0].url).to eq("uri1")
       expect(recipes[0].country).to eq(country)
       expect(recipes[0].image).to eq("image1")
 
-      expect(recipes[1]).to be_a(RecipePoro)
+      expect(recipes[1]).to be_a(Recipe)
       expect(recipes[1].title).to eq("Recipe2")
       expect(recipes[1].url).to eq("uri2")
       expect(recipes[1].country).to eq(country)

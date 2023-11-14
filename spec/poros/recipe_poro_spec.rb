@@ -1,9 +1,8 @@
 require 'rails_helper'
-require_relative '../../app/poros/recipe_poro'
 
-RSpec.describe RecipePoro do
+RSpec.describe Recipe do
   describe "#initialize" do
-    it "initializes a RecipePoro object" do
+    it "initializes a Recipe object" do
       data = {
         "recipe" => {
           "label" => "Delicious Recipe",
@@ -13,9 +12,9 @@ RSpec.describe RecipePoro do
       }
       country = "United States"
 
-      recipe_poro = RecipePoro.new(data, country)
+      recipe_poro = Recipe.new(data, country)
 
-      expect(recipe_poro).to be_a(RecipePoro)
+      expect(recipe_poro).to be_a(Recipe)
     end
 
     it "sets the attributes correctly" do
@@ -28,7 +27,7 @@ RSpec.describe RecipePoro do
       }
       country = "United States"
 
-      recipe_poro = RecipePoro.new(data, country)
+      recipe_poro = Recipe.new(data, country)
 
       expect(recipe_poro.id).to be_nil
       expect(recipe_poro.title).to eq("Delicious Recipe")
