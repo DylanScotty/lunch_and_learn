@@ -9,6 +9,10 @@ RSpec.describe User, type: :model do
     it { should validate_confirmation_of(:password) }
   end
 
+  describe "relationships" do
+    it { should have_many(:favorites) }
+  end
+
   describe "methods" do
     it "generates an API key before create" do
       user = User.new(name: 'Dylan', email: 'dylan@example.com', password: 'password', password_confirmation: 'password')
